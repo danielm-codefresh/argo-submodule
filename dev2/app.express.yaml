@@ -2,9 +2,9 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   namespace: test-runtime
-  name: app-dev
+  name: app-dev2
   labels:
-    app: app-dev
+    app: app-dev2
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
@@ -13,7 +13,7 @@ spec:
     name: in-cluster
   project: test-runtime
   source:
-    path: cd-five-mins/resources
+    path: cd-five-mins/resources2
     repoURL: git@github.com:danielm-codefresh/argo-submodule.git
     targetRevision: main
   syncPolicy:
