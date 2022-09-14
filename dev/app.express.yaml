@@ -13,7 +13,7 @@ spec:
     name: https://kubernetes.default.svc
   project: default
   source:
-    path: ./cd-five-mins/k8s-resources/express/overlays/dev
+    path: cd-five-mins/k8s-resources/express/overlays/dev
     repoURL: git@github.com::nightmar39/cd-five-mins.git
     targetRevision: main
   syncPolicy:
