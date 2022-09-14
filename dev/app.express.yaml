@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  namespace: csdp-july
+  namespace: default
   name: express-dev
   labels:
     app: express-dev
@@ -9,16 +9,14 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: express-dev
+    namespace: default
     name: https://kubernetes.default.svc
   project: default
   source:
     path: cd-five-mins/k8s-resources/express/overlays/dev
-    repoURL: git@github.com:nightmar39/cd-five-mins.git
+    repoURL: git@github.com:danielm/cd-five-mins.git
     targetRevision: main
   syncPolicy:
-    syncOptions:
-      - CreateNamespace=true
     automated:
       prune: true
       selfHeal: true
