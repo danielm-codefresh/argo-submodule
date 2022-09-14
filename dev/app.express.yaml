@@ -2,9 +2,9 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   namespace: default
-  name: express-dev
+  name: express-dev2
   labels:
-    app: express-dev
+    app: express-dev2
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
@@ -13,7 +13,7 @@ spec:
     name: https://kubernetes.default.svc
   project: default
   source:
-    path: resources
+    path: cd-five-mins/resources
     repoURL: git@github.com:danielm-codefresh/argo-submodule.git
     targetRevision: main
   syncPolicy:
