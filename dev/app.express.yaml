@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  namespace: default
+  namespace: test-runtime
   name: express-dev2
   labels:
     app: express-dev2
@@ -9,7 +9,7 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: default
+    namespace: test-runtime
     name: https://kubernetes.default.svc
   project: default
   source:
