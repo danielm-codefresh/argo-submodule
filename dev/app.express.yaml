@@ -10,8 +10,8 @@ metadata:
 spec:
   destination:
     namespace: test-runtime
-    name: https://kubernetes.default.svc
-  project: default
+    name: 'https://kubernetes.default.svc'
+  project: test-runtime
   source:
     path: cd-five-mins/resources
     repoURL: git@github.com:danielm-codefresh/argo-submodule.git
