@@ -14,7 +14,7 @@ spec:
   project: default
   source:
     path: cd-five-mins/k8s-resources/express/overlays/dev
-    repoURL: git@github.com:danielm-codefresh/cd-five-mins.git
+    repoURL: https://github.com/danielm-codefresh/cd-five-mins.git
     targetRevision: main
   syncPolicy:
     automated:
