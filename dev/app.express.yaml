@@ -13,7 +13,7 @@ spec:
     name: https://kubernetes.default.svc
   project: default
   source:
-    path: cd-five-mins/k8s-resources/express/overlays/dev
+    path: resources
     repoURL: git@github.com:danielm-codefresh/argo-submodule.git
     targetRevision: main
   syncPolicy:
